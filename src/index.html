@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+	@@include('html/_head.htm',{
+	"title":"French Barber"
+	})
+	<body>
+		<div class="wrapper">
+			@@include('html/_header.htm',{})
+			<main class="page">
+				<section class="page__main main-block">
+					<div class="main-block__container">
+						<div class="main-block__text">Depuis 1989</div>
+						<h1 class="main-block__title">le salon <br> des <span>hommes</span></h1>
+						<div class="main-block__subtitle">
+							Une envie de tailler votre barbe, rafraîchir votre coupe et vous faire bichonner ? C’est l’endroit idéal.
+						</div>
+						<button data-prlx-mouse type="submit" class="main-block__button button">VOIR TOUT</button>
+					</div>
+					<div class="main-block__img">
+						<img src="@img/orange.jpg" alt="orange line">
+					</div>
+				</section>
+				<section class="page__barbe barbe-block">
+					<div class="barbe-block__container">
+						<div class="barbe-block__content">
+							<h3 class="barbe-block__title title">LA <span>BARBE</span></h3>
+							<div class="barbe-block__text text">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, 
+								lectus magna fringilla urna, porttitor rhoncus dolor purus non t aliquam, purus sit amet luctus venenatis, 
+								lectus magna fringilla urna, porttitor rhoncus dolor purus non.</div>
+							<button data-prlx-mouse type="submit" class="barbe-block__button button">EN SAVOIR PLUS</button>
+						</div>
+						<div class="barbe-block__image">
+							<img src="@img/barbe/main.jpg" alt="barbe work">
+						</div>
+						<div class="barbe-block__subimage">
+							<img src="@img/barbe/submain.png" alt="barbe tool">
+						</div>
+					</div>
+				</section>
+				<section class="page__peau peau-block">
+					<div class="peau-block__container">
+						<div class="peau-block__bg">SOINS</div>
+						<div class="peau-block__image">
+							<img src="@img/peau/main.png" alt="peau work">
+						</div>
+						<div class="peau-block__content">
+							<h3 class="peau-block__title title">LA <span>PEAU</span></h3>
+							<div class="peau-block__text text">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, 
+								lectus magna fringilla urna, porttitor rhoncus dolor purus non t aliquam, purus sit amet luctus venenatis, 
+								lectus magna fringilla urna, porttitor rhoncus dolor purus non.
+							</div>
+							<button data-prlx-mouse type="submit" class="peau-block__button button">EN SAVOIR PLUS</button>
+						</div>
+						<div class="peau-block__subimage">
+							<img src="@img/peau/submain.png" alt="peau tool">
+						</div>
+					</div>
+				</section>
+				<section class="page__cheveu cheveu-block">
+					<div class="cheveu-block__container">
+						<div class="cheveu-block__bg">COIFFURE & COL0</div>
+						<div class="cheveu-block__content">
+							<h3 class="cheveu-block__title title">LA <span>CHEVEU</span></h3>
+							<div class="cheveu-block__text text">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, 
+								lectus magna fringilla urna, porttitor rhoncus dolor purus non t aliquam, purus sit amet luctus venenatis, 
+								lectus magna fringilla urna, porttitor rhoncus dolor purus non.
+							</div>
+							<button data-prlx-mouse type="submit" class="cheveu-block__button button">EN SAVOIR PLUS</button>
+						</div>
+						<div class="cheveu-block__image">
+							<img src="@img/cheveu/main.png" alt="cheveu work">
+						</div>
+						<div class="cheveu-block__subimage">
+							<img src="@img/cheveu/submain.png" alt="cheveu tool">
+						</div>
+					</div>
+				</section>
+				<section class="page__produits produits-block">
+					<div class="produits-block__container">
+						<div class="produits-block__content">
+							<h3 class="produits-block__title title">nos produits</h3>
+							<button data-prlx-mouse type="submit" class="produits-block__button button">VOIR TOUT</button>
+						</div>
+						<div class="produits-block__slider swiper">
+							<div class="produits-block__wrapper swiper-wrapper">
+								<a href="" class="produits-block__slide swiper-slide slide-produits">
+									<div class="slide-produits__image"><img src="@img/produits/01.jpg" alt="produits"></div>
+									<div class="slide-produits__content">
+										<div class="slide-produits__title">BEARD WAX</div>
+										<div class="slide-produits__price">19 €</div>
+									</div>
+								</a>
+								<a href="" class="produits-block__slide swiper-slide slide-produits">
+									<div class="slide-produits__image"><img src="@img/produits/02.jpg" alt="produits"></div>
+									<div class="slide-produits__content">
+										<div class="slide-produits__title">BEARD BRUSH</div>
+										<div class="slide-produits__price">9 €</div>
+									</div>
+								</a>
+								<a href="" class="produits-block__slide swiper-slide slide-produits">
+									<div class="slide-produits__image"><img src="@img/produits/03.jpg" alt="produits"></div>
+									<div class="slide-produits__content">
+										<div class="slide-produits__title">GROOMING OIL</div>
+										<div class="slide-produits__price">17 €</div>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+			@@include('html/_footer.htm',{})
+		</div>
+		@@include('html/_popup.htm',{})
+		@@include('html/_js.htm',{})
+	</body>
+</html>

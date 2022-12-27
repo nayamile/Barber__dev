@@ -1,0 +1,307 @@
+//====================================================================================================
+
+.main-block {
+	background-image: url(../img/hero.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: rem(900);
+
+   // .main-block__container
+   &__container {
+      padding-top: rem(244);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      color: $whiteColor;
+   }
+
+   // .main-block__text
+   &__text {
+      font-family: 'Lovelace Text';
+      font-size: rem(15);
+      line-height: math.div(22, 15);
+      &:not(:last-child) {
+         margin-bottom: rem(40);
+      }
+   }
+
+   // .main-block__title
+   &__title {
+      font-size: rem(60);
+      line-height: math.div(60, 60);
+      letter-spacing: rem(1);
+      text-transform: uppercase;
+      &:not(:last-child) {
+         margin-bottom: rem(33);
+      }
+      span {
+         -webkit-text-fill-color: none;
+         -webkit-text-stroke-color: $orangeColor;
+         -webkit-text-stroke-width: rem(1.5); 
+      }
+   }
+
+   // .main-block__subtitle
+   &__subtitle {
+      max-width: rem(410);
+      font-family: 'Lovelace Text';
+      font-size: rem(15);
+      line-height: math.div(22, 15);
+      &:not(:last-child) {
+         margin-bottom: rem(64);
+      }
+   }
+
+   // .main-block__button
+   &__button {
+      margin-bottom: rem(118);
+   }
+
+	// .main-block__img
+	&__img {
+      img {
+         width: 100%;
+      }
+	}
+
+}
+
+//====================================================================================================
+
+.barbe-block {
+   padding-top: rem(100);
+
+   // .barbe-block__container
+   &__container {
+      display: flex;
+      justify-content: right;
+      align-items: center;
+      gap: rem(200);
+   }
+
+   // .barbe-block__content
+   &__content {
+      max-width: rem(400);
+      text-align: right;
+   }
+
+   // .barbe-block__title
+   &__title {
+   }
+
+   // .barbe-block__text
+   &__text {
+   }
+
+   // .barbe-block__button
+   &__button {
+      border: rem(1.5) solid $mainColor;
+   }
+
+   // .barbe-block__image
+   &__image {
+      position: relative;
+   }
+
+   // .barbe-block__subimage
+   &__subimage {
+      position: absolute;
+      right: 33%;
+   }
+}
+
+//====================================================================================================
+
+.peau-block {
+   padding-top: rem(120);
+
+   // .peau-block__container
+   &__container {
+      padding-top: rem(30);
+      position: relative;
+      display: flex;
+      justify-content: left;
+      align-items: center;
+      gap: rem(105);
+   }
+
+   // .peau-block__bg
+   &__bg {
+      position: absolute;
+      top: 0;
+      left: rem(-20);
+      font-size: rem(110);
+      line-height: math.div(99, 110);
+      letter-spacing: rem(2);
+      text-transform: uppercase;
+      color: $whiteColor;
+      -webkit-text-fill-color: none;
+      -webkit-text-stroke-color: $mainColor;
+      -webkit-text-stroke-width: rem(1.5);
+   }
+
+   // .peau-block__content
+   &__content {
+      max-width: rem(390);
+      text-align: left;
+   }
+
+   // .peau-block__title
+   &__title {
+   }
+
+   // .peau-block__text
+   &__text {
+   }
+
+   // .peau-block__button
+   &__button {
+      border: rem(1.5) solid $mainColor;
+   }
+
+   // .peau-block__image
+   &__image {
+      position: relative;
+   }
+
+   // .peau-block__subimage
+   &__subimage {
+      position: absolute;
+      right: rem(50);
+   }
+}
+
+//====================================================================================================
+
+.cheveu-block {
+
+   // .cheveu-block__container
+   &__container {
+      padding-top: rem(180);
+      position: relative;
+      display: flex;
+      justify-content: right;
+      align-items: center;
+      gap: rem(180);
+   }
+
+   // .cheveu-block__bg
+   &__bg {
+      padding-top: rem(120);
+      position: absolute;
+      top: 0;
+      right: 0;
+      font-size: rem(110);
+      line-height: math.div(99, 110);
+      word-spacing: -1.5rem;
+      letter-spacing: rem(1);
+      text-transform: uppercase;
+      color: $whiteColor;
+      -webkit-text-fill-color: none;
+      -webkit-text-stroke-color: $mainColor;
+      -webkit-text-stroke-width: rem(1.5);
+   }
+
+   // .cheveu-block__content
+   &__content {
+      max-width: rem(450);
+      text-align: right;
+   }
+
+   // .cheveu-block__title
+   &__title {
+   }
+
+   // .cheveu-block__text
+   &__text {
+   }
+
+   // .cheveu-block__button
+   &__button {
+      border: rem(1.5) solid $mainColor;
+   }
+
+      // .cheveu-block__image
+   &__image {
+      position: relative;
+   }
+
+   // .cheveu-block__subimage
+   &__subimage {
+      position: absolute;
+      right: 33%;
+   }
+}
+
+//====================================================================================================
+
+.produits-block {
+   padding-top: rem(120);
+
+   // .produits-block__continer
+   &__container {
+   }
+
+   // .produits-block__content
+   &__content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      &:not(:last-child) {
+         margin-bottom: rem(20);
+      }
+   }
+
+   // .produits-block__title
+   &__title {
+   }
+
+   // .produits-block__button
+   &__button {
+      border: rem(1.5) solid $mainColor;
+   }
+
+   // .produits-block__slider
+   &__slider {
+   }
+
+   // .produits-block__wrapper
+   &__wrapper {
+      display: flex;
+      justify-content: space-between;
+   }
+
+   // .produits-block__slide
+   &__slide {
+   }
+}
+
+.slide-produits {
+
+   // .slide-produits__image
+   &__image {
+      &:not(:last-child) {
+         margin-bottom: rem(22);
+      }
+   }
+
+   // .slide-produits__content
+   &__content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: rem(12);
+      line-height: math.div(15, 12);
+      text-transform: uppercase;
+   }
+
+   // .slide-produits__title
+   &__title {
+   }
+
+   // .slide-produits__price
+   &__price {
+      color: $orangeColor;
+   }
+}

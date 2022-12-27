@@ -1,0 +1,23 @@
+// Заголовки, загальні БЕМ блоки та інше...
+
+.title {
+   font-size: rem(55);
+   line-height: math.div(55, 55);
+   letter-spacing: rem(1);
+   text-transform: uppercase;
+   span {
+      color: $orangeColor;
+   }
+   &:not(:last-child) {
+      margin-bottom: rem(30);
+   }
+}
+
+.text {
+   font-family: 'Lovelace Text';
+   font-size: rem(16);
+   line-height: math.div(24, 16);
+   &:not(:last-child) {
+      margin-bottom: rem(48);
+   }
+}
