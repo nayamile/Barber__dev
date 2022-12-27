@@ -238,6 +238,7 @@
 
 .produits-block {
    padding-top: rem(120);
+   padding-bottom: rem(120);
 
    // .produits-block__continer
    &__container {
@@ -305,3 +306,131 @@
       color: $orangeColor;
    }
 }
+
+//====================================================================================================
+
+.devis-block {
+   padding: rem(100) 0;
+   background-color: $orangeColor;
+
+   // .devis-block__container
+   &__container {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+   }
+
+   // .devis-block__content
+   &__content {
+      max-width: rem(556);
+   }
+
+   // .devis-block__devis
+   &__devis {
+      font-family: 'Lovelace Text';
+      font-size: rem(45);
+      line-height: math.div(58, 45);
+      letter-spacing: rem(-0.3);
+      span {
+         color: $whiteColor;
+         text-decoration: underline;
+      }
+      &:not(:last-child) {
+         margin-bottom: rem(50);
+      }
+   }
+
+   // .devis-block__name
+   &__name {
+      font-size: rem(15);
+      line-height: math.div(25, 15);
+   }
+
+   // .devis-block__position
+   &__position {
+      font-size: rem(15);
+      line-height: math.div(25, 15);
+      color: $whiteColor;
+   }
+
+   // .devis-block__text
+   &__text {
+      max-width: rem(275);
+      font-family: 'Lovelace Text';
+      font-size: rem(21);
+      line-height: math.div(32, 21);
+   }
+}
+
+//====================================================================================================
+
+.coordonnees-block {
+   padding: rem(120) 0;
+
+   // .coordonnees-block__container
+   &__container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: rem(20);
+   }
+
+   // .coordonnees-block__image
+   &__image {
+   }
+
+   // .coordonnees-block__content
+   &__content {
+   }
+
+   // .coordonnees-block__title
+   &__title {
+   }
+
+   // .coordonnees-block__text
+   &__text {
+      max-width: rem(362);
+      font-size: rem(18);
+      line-height: math.div(25, 18);
+   }
+
+   // .coordonnees-block__address
+   &__address {
+      font-style: normal;
+      font-family: 'Lovelace Text';
+      font-size: rem(25);
+      line-height: math.div(35, 25);
+   }
+
+      // .coordonnees-block__address
+   &__adrs {
+      &:not(:last-child) {
+         margin-bottom: rem(40);
+      }
+   }
+
+   // .coordonnees-block__tel
+   &__tel {
+      display: block;
+      &:not(:last-child) {
+         margin-bottom: rem(10);
+      }
+   }
+
+   // .coordonnees-block__email
+   &__email {
+      display: block;
+   }
+
+   // .coordonnees-block__social
+   &__social {
+      display: flex;
+      gap: rem(24);
+      margin-top: rem(48);
+   }
+
+   // .coordonnees-block__social-item
+   &__social-item {
+   }
+}
+
