@@ -2,7 +2,9 @@
 // Сніппет (HTML): btn
 
 .button {
-	padding: rem(32) rem(60);
+	padding: rem(32) 0;
+	@include adaptiveValue("padding-left", 60, 36);
+	@include adaptiveValue("padding-right", 60, 36);
 	border: rem(1.5) solid $whiteColor;
 	border-radius: 50%;
 	font-size: rem(11);

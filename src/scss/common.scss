@@ -1,7 +1,7 @@
 // Заголовки, загальні БЕМ блоки та інше...
 
 .title {
-   font-size: rem(55);
+   @include adaptiveValue("font-size", 55, 30);
    line-height: math.div(55, 55);
    letter-spacing: rem(1);
    text-transform: uppercase;
@@ -9,15 +9,15 @@
       color: $orangeColor;
    }
    &:not(:last-child) {
-      margin-bottom: rem(30);
+      @include adaptiveValue("margin-bottom", 30, 20);
    }
 }
 
 .text {
    font-family: 'Lovelace Text';
-   font-size: rem(16);
+   @include adaptiveValue("font-size", 16, 15);
    line-height: math.div(24, 16);
    &:not(:last-child) {
-      margin-bottom: rem(48);
+      @include adaptiveValue("margin-bottom", 48, 32);
    }
 }

@@ -3248,12 +3248,7 @@
                 nextEl: ".swiper-button-next"
             },
             breakpoints: {
-                640: {
-                    slidesPerView: 1,
-                    spaceBetween: 0,
-                    autoHeight: true
-                },
-                768: {
+                520: {
                     slidesPerView: 2,
                     spaceBetween: 30
                 },
