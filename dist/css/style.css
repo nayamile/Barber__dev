@@ -691,6 +691,151 @@ body {
   line-height: 1.5238095238;
 }
 
+.artistes-block__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.artistes-block__content:not(:last-child) {
+  margin-bottom: 3.125rem;
+}
+
+.artistes-block__text {
+  max-width: 28.75rem;
+}
+
+.artistes-block__button {
+  border: 0.09375rem solid #000000;
+}
+
+.artistes-block__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 1.9375rem;
+}
+
+.list-artistes__item {
+  max-width: 18.75rem;
+}
+
+.list-artistes__item:nth-child(2),
+.list-artistes__item:nth-child(5) {
+  margin-top: 3.125rem;
+}
+
+.list-artistes__name {
+  line-height: 1.4705882353;
+  text-transform: uppercase;
+}
+
+.list-artistes__name span {
+  color: #F89369;
+}
+
+.tarifs-block {
+  padding-top: 5rem;
+}
+
+.tarifs-block__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.slide-tarifs {
+  padding: 3.125rem 2.5rem;
+  border: 0.125rem solid #000000;
+  border-radius: 0.625rem;
+  text-align: center;
+}
+
+.slide-tarifs__title {
+  height: 3.75rem;
+  font-size: 1.3125rem;
+  line-height: 1.4285714286;
+  letter-spacing: 0.0625rem;
+  text-transform: uppercase;
+}
+
+.slide-tarifs__title:not(:last-child) {
+  margin-bottom: 0.9375rem;
+}
+
+.slide-tarifs__subtitle {
+  font-family: "Lovelace Text";
+  font-size: 0.9375rem;
+  line-height: 1.4666666667;
+}
+
+.slide-tarifs__subtitle:not(:last-child) {
+  margin-bottom: 0.9375rem;
+}
+
+.slide-tarifs__text {
+  font-family: "Lovelace Text";
+  font-size: 0.75rem;
+  line-height: 2;
+  color: rgba(0, 0, 0, 0.45);
+}
+
+.slide-tarifs__text span {
+  font-family: "Monument Extended";
+  font-size: 1.5625rem;
+  color: #F89369;
+}
+
+.slide-tarifs__text:not(:last-child) {
+  margin-bottom: 0.9375rem;
+}
+
+.slide-tarifs__btn {
+  border: 0.09375rem solid #000000;
+}
+
+.slide-tarifs__btn:not(:last-child) {
+  margin-bottom: 2.5rem;
+}
+
+.slide-tarifs__list {
+  height: 12.5rem;
+}
+
+.slide-tarifs__item {
+  font-family: "Lovelace Text";
+  font-size: 0.9375rem;
+  line-height: 1.4666666667;
+  text-align: left;
+}
+
+.slide-tarifs__item:not(:last-child) {
+  margin-bottom: 0.9375rem;
+}
+
 .coordonnees-block__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1749,6 +1894,26 @@ button.swiper-pagination-bullet {
     font-size: 2.8125rem;
   }
 
+  .artistes-block {
+    padding-top: 7.5rem;
+  }
+
+  .list-artistes__item {
+    max-width: 18.75rem;
+  }
+
+  .list-artistes__image img {
+    width: 16.4375rem;
+  }
+
+  .list-artistes__name {
+    font-size: 1.0625rem;
+  }
+
+  .tarifs-block__content:not(:last-child) {
+    margin-bottom: 3.75rem;
+  }
+
   .coordonnees-block {
     padding-top: 7.5rem;
   }
@@ -1792,7 +1957,7 @@ button.swiper-pagination-bullet {
     background-color: #000000;
     gap: 1.875rem;
     padding: 0 0.9375rem;
-    padding-top: 8.125rem;
+    padding-top: 6.875rem;
   }
 
   .menu__body::before {
@@ -1879,6 +2044,36 @@ button.swiper-pagination-bullet {
     -webkit-transform: rotate(45deg);
         -ms-transform: rotate(45deg);
             transform: rotate(45deg);
+  }
+
+  .list-artistes__item:nth-child(2),
+  .list-artistes__item:nth-child(5) {
+    margin-top: 0;
+  }
+
+  .list-artistes__item:nth-child(2n) {
+    margin-top: 3.125rem;
+  }
+
+  .coordonnees-block__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .coordonnees-block__content {
+    text-align: center;
+  }
+
+  .coordonnees-block__text {
+    max-width: 100%;
+  }
+
+  .coordonnees-block__social {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -1979,27 +2174,6 @@ button.swiper-pagination-bullet {
 
   .devis-block__text {
     max-width: 100%;
-  }
-
-  .coordonnees-block__container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-
-  .coordonnees-block__content {
-    text-align: center;
-  }
-
-  .coordonnees-block__text {
-    max-width: 100%;
-  }
-
-  .coordonnees-block__social {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
 }
 
@@ -2142,6 +2316,26 @@ button.swiper-pagination-bullet {
 
   .devis-block__devis {
     font-size: 2.1875rem;
+  }
+
+  .artistes-block {
+    padding-top: 5.625rem;
+  }
+
+  .list-artistes__item {
+    max-width: 10rem;
+  }
+
+  .list-artistes__image img {
+    width: 10rem;
+  }
+
+  .list-artistes__name {
+    font-size: 0.75rem;
+  }
+
+  .tarifs-block__content:not(:last-child) {
+    margin-bottom: 2rem;
   }
 
   .coordonnees-block {
@@ -2551,6 +2745,66 @@ button.swiper-pagination-bullet {
 @supports not (font-size: clamp( 2.1875rem , 1.9166666667rem  +  1.1111111111vw , 2.8125rem )) {
     .devis-block__devis {
       font-size: calc(2.1875rem + 0.625 * (100vw - 24.375rem) / 56.25);
+    }
+}
+
+@supports (padding-top: clamp( 5.625rem , 4.8125rem  +  3.3333333333vw , 7.5rem )) {
+    .artistes-block {
+      padding-top: clamp( 5.625rem , 4.8125rem  +  3.3333333333vw , 7.5rem );
+    }
+}
+
+@supports not (padding-top: clamp( 5.625rem , 4.8125rem  +  3.3333333333vw , 7.5rem )) {
+    .artistes-block {
+      padding-top: calc(5.625rem + 1.875 * (100vw - 24.375rem) / 56.25);
+    }
+}
+
+@supports (max-width: clamp( 10rem , 6.2083333333rem  +  15.5555555556vw , 18.75rem )) {
+    .list-artistes__item {
+      max-width: clamp( 10rem , 6.2083333333rem  +  15.5555555556vw , 18.75rem );
+    }
+}
+
+@supports not (max-width: clamp( 10rem , 6.2083333333rem  +  15.5555555556vw , 18.75rem )) {
+    .list-artistes__item {
+      max-width: calc(10rem + 8.75 * (100vw - 24.375rem) / 56.25);
+    }
+}
+
+@supports (width: clamp( 10rem , 7.2104166667rem  +  11.4444444444vw , 16.4375rem )) {
+    .list-artistes__image img {
+      width: clamp( 10rem , 7.2104166667rem  +  11.4444444444vw , 16.4375rem );
+    }
+}
+
+@supports not (width: clamp( 10rem , 7.2104166667rem  +  11.4444444444vw , 16.4375rem )) {
+    .list-artistes__image img {
+      width: calc(10rem + 6.4375 * (100vw - 24.375rem) / 56.25);
+    }
+}
+
+@supports (font-size: clamp( 0.75rem , 0.6145833333rem  +  0.5555555556vw , 1.0625rem )) {
+    .list-artistes__name {
+      font-size: clamp( 0.75rem , 0.6145833333rem  +  0.5555555556vw , 1.0625rem );
+    }
+}
+
+@supports not (font-size: clamp( 0.75rem , 0.6145833333rem  +  0.5555555556vw , 1.0625rem )) {
+    .list-artistes__name {
+      font-size: calc(0.75rem + 0.3125 * (100vw - 24.375rem) / 56.25);
+    }
+}
+
+@supports (margin-bottom: clamp( 2rem , 1.2416666667rem  +  3.1111111111vw , 3.75rem )) {
+    .tarifs-block__content:not(:last-child) {
+      margin-bottom: clamp( 2rem , 1.2416666667rem  +  3.1111111111vw , 3.75rem );
+    }
+}
+
+@supports not (margin-bottom: clamp( 2rem , 1.2416666667rem  +  3.1111111111vw , 3.75rem )) {
+    .tarifs-block__content:not(:last-child) {
+      margin-bottom: calc(2rem + 1.75 * (100vw - 24.375rem) / 56.25);
     }
 }
 

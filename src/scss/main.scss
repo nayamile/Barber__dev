@@ -448,6 +448,198 @@
 
 //====================================================================================================
 
+.artistes-block {
+   @include adaptiveValue("padding-top", 120, 90);
+
+   // .artistes-block__container
+   &__container {
+   }
+
+   // .artistes-block__content
+   &__content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      &:not(:last-child) {
+         margin-bottom: rem(50);
+      }
+   }
+
+   // .artistes-block__title
+   &__title {
+   }
+
+   // .artistes-block__text
+   &__text {
+      max-width: rem(460);
+   }
+
+   // .artistes-block__button
+   &__button {
+      border: rem(1.5) solid $mainColor;
+   }
+
+   // .artistes-block__list
+   &__list {
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      gap: rem(31);
+   }
+}
+
+.list-artistes {
+
+   // .list-artistes__item
+   &__item {
+      max-width: rem(300);
+      @include adaptiveValue("max-width", 300, 160);
+      &:nth-child(2), &:nth-child(5) {
+         margin-top: rem(50);
+      }
+      @media (max-width: $tablet) {
+         &:nth-child(2), &:nth-child(5) {
+            margin-top: 0;
+         }
+         &:nth-child(2n) {
+            margin-top: rem(50);
+         }
+      }
+   }
+
+   // .list-artistes__image
+   &__image {
+      img {
+         @include adaptiveValue("width", 263, 160);
+      }
+   }
+
+   // .list-artistes__name
+   &__name {
+      @include adaptiveValue("font-size", 17, 12);
+      line-height: math.div(25, 17);
+      text-transform: uppercase;
+      span {
+         color: $orangeColor;
+      }
+   }
+}
+
+//====================================================================================================
+
+.tarifs-block {
+   padding-top: rem(80);
+
+   // .tarifs-block__container
+
+   &__container {
+   }
+
+   // .tarifs-block__content
+   &__content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      &:not(:last-child) {
+         @include adaptiveValue("margin-bottom", 60, 32);
+      }
+   }
+
+   // .tarifs-block__title
+   &__title {
+   }
+
+   // .tarifs-block__text
+   &__text {
+   }
+
+   // .tarifs-block__slider
+   &__slider {
+   }
+
+   // .tarifs-block__wrapper
+   &__wrapper {
+   }
+
+   // .tarifs-block__slide
+   &__slide {
+   }
+}
+
+.slide-tarifs {
+   padding: rem(50) rem(40);
+   border: rem(2) solid $mainColor;
+   border-radius: rem(10);
+   text-align: center;
+
+   // .slide-tarifs__title
+   &__title {
+      height: rem(60);
+      font-size: rem(21);
+      line-height: math.div( 30, 21);
+      letter-spacing: rem(1);
+      text-transform: uppercase;
+      &:not(:last-child) {
+         margin-bottom: rem(15);
+      }
+   }
+
+   // .slide-tarifs__subtitle
+   &__subtitle {
+      font-family: 'Lovelace Text';
+      font-size: rem(15);
+      line-height: math.div(22, 15);
+      &:not(:last-child) {
+         margin-bottom: rem(15);
+      }
+   }
+
+   // .slide-tarifs__text
+   &__text {
+      font-family: 'Lovelace Text';
+      font-size: rem(12);
+      line-height: math.div(24, 12);
+      color: rgba(0, 0, 0, 0.45);
+      span {
+         font-family: 'Monument Extended';
+         font-size: rem(25);
+         color: $orangeColor;
+      }
+      &:not(:last-child) {
+         margin-bottom: rem(15);
+      }
+   }
+
+   // .slide-tarifs__btn
+   &__btn {
+      border: rem(1.5) solid $mainColor;
+      &:not(:last-child) {
+         margin-bottom: rem(40);
+      }
+   }
+
+   // .slide-tarifs__list
+   &__list {
+      height: rem(200);
+   }
+
+   // .slide-tarifs__item
+   &__item {
+      font-family: 'Lovelace Text';
+      font-size: rem(15);
+      line-height: math.div(22, 15);
+      text-align: left;
+      &:not(:last-child) {
+         margin-bottom: rem(15);
+      }
+   }
+}
+
+//====================================================================================================
+
 .coordonnees-block {
    @include adaptiveValue("padding-top", 120, 40);
    @include adaptiveValue("padding-bottom", 120, 40);
@@ -459,7 +651,7 @@
       align-items: center;
       column-gap: rem(20);
       row-gap: rem(32);
-      @media (max-width: $mobile) {
+      @media (max-width: $tablet) {
          flex-direction: column;
       }
    }
@@ -473,7 +665,7 @@
 
    // .coordonnees-block__content
    &__content {
-      @media (max-width: $mobile) {
+      @media (max-width: $tablet) {
          text-align: center;
       }
    }
@@ -487,7 +679,7 @@
       max-width: rem(362);
       font-size: rem(18);
       line-height: math.div(25, 18);
-      @media (max-width: $mobile) {
+      @media (max-width: $tablet) {
          max-width: 100%;
       }
    }
@@ -525,7 +717,7 @@
       display: flex;
       gap: rem(24);
       margin-top: rem(48);
-      @media (max-width: $mobile) {
+      @media (max-width: $tablet) {
          justify-content: center;
       }
    }
